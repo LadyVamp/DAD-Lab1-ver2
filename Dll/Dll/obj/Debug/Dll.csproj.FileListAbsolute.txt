@@ -1,0 +1,5 @@
+D:\Бауманка\=7 семестр=\РРП\Лаба 1 c#\Dll\Dll\obj\Debug\Dll.csprojResolveAssemblyReference.cache
+D:\Бауманка\=7 семестр=\РРП\Лаба 1 c#\Dll\Dll\bin\Debug\Dll.dll
+D:\Бауманка\=7 семестр=\РРП\Лаба 1 c#\Dll\Dll\bin\Debug\Dll.pdb
+D:\Бауманка\=7 семестр=\РРП\Лаба 1 c#\Dll\Dll\obj\Debug\Dll.dll
+D:\Бауманка\=7 семестр=\РРП\Лаба 1 c#\Dll\Dll\obj\Debug\Dll.pdb
