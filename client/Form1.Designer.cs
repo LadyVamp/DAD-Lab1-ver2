@@ -33,9 +33,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.sub = new System.Windows.Forms.Button();
+            this.mul = new System.Windows.Forms.Button();
+            this.div = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -84,17 +87,17 @@
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Number1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button1
+            // add
             // 
-            this.button1.Location = new System.Drawing.Point(99, 252);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.add.Location = new System.Drawing.Point(67, 240);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(47, 23);
+            this.add.TabIndex = 1;
+            this.add.Text = "+";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // groupBox2
             // 
@@ -111,18 +114,48 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(85, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "labe3";
+            this.label3.Text = "label3";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // sub
+            // 
+            this.sub.Location = new System.Drawing.Point(159, 240);
+            this.sub.Name = "sub";
+            this.sub.Size = new System.Drawing.Size(45, 23);
+            this.sub.TabIndex = 3;
+            this.sub.Text = "-";
+            this.sub.UseVisualStyleBackColor = true;
+            // 
+            // mul
+            // 
+            this.mul.Location = new System.Drawing.Point(67, 276);
+            this.mul.Name = "mul";
+            this.mul.Size = new System.Drawing.Size(47, 23);
+            this.mul.TabIndex = 4;
+            this.mul.Text = "*";
+            this.mul.UseVisualStyleBackColor = true;
+            // 
+            // div
+            // 
+            this.div.Location = new System.Drawing.Point(159, 276);
+            this.div.Name = "div";
+            this.div.Size = new System.Drawing.Size(45, 23);
+            this.div.TabIndex = 5;
+            this.div.Text = "/";
+            this.div.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 311);
+            this.Controls.Add(this.div);
+            this.Controls.Add(this.mul);
+            this.Controls.Add(this.sub);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -142,9 +175,12 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button add;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button sub;
+        private System.Windows.Forms.Button mul;
+        private System.Windows.Forms.Button div;
     }
 }
 

@@ -29,8 +29,8 @@ namespace client
         }
                 
         Class1 obj = new Class1();
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        public void startServer(object sender, EventArgs e)
         {
             try
             {
@@ -41,14 +41,46 @@ namespace client
 
                 obj = (Class1)Activator.GetObject(typeof(Class1), "tcp://localhost:3128/Hello");
 
-                label3.Text = obj.cal(num1, num2).ToString();
+               // label3.Text = obj.add(num1, num2).ToString();
             }
             catch (System.Net.Sockets.SocketException)
             {
                 MessageBox.Show("Server is not avalaible");
             }
+
         }
 
+        public void add_Click(object sender, EventArgs e)
+        {
+                double num1 = Convert.ToInt32(textBox1.Text);
+                double num2 = Convert.ToInt32(textBox2.Text);
+
+               label3.Text = obj.add(num1, num2).ToString();
+        }
+
+        public void sub_Click(object sender, EventArgs e)
+        {
+            double num1 = Convert.ToInt32(textBox1.Text);
+            double num2 = Convert.ToInt32(textBox2.Text);
+
+            label3.Text = obj.sub(num1, num2).ToString();
+        }
+
+        public void mul_Click(object sender, EventArgs e)
+        {
+            double num1 = Convert.ToInt32(textBox1.Text);
+            double num2 = Convert.ToInt32(textBox2.Text);
+
+            label3.Text = obj.mul(num1, num2).ToString();
+        }
+
+        public void div_Click(object sender, EventArgs e)
+        {
+            double num1 = Convert.ToInt32(textBox1.Text);
+            double num2 = Convert.ToInt32(textBox2.Text);
+
+            label3.Text = obj.div(num1, num2).ToString();
+        }
         private void label3_Click(object sender, EventArgs e)
         {
 
